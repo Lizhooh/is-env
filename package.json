@@ -1,0 +1,29 @@
+{
+  "name": "is-env",
+  "version": "1.0.0",
+  "description": "is-env can determine the current JavaScript running environment, and now includes 'browser', 'react-native', 'nodejs'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "is-env",
+    "is-browser",
+    "is-nodejs",
+    "is-react-native",
+    "is-js",
+    "is",
+    "is-type",
+    "react",
+    "nodejs",
+    "browser",
+    "is-window",
+    "window"
+  ],
+  "author": "lizhooh",
+  "license": "ISC"
+}
