@@ -48,8 +48,6 @@ When the parameter is a non string, output the current environment.
 ```js
 const isEnv = require('is-env');
 
-let _fetch;
-
 switch(isEnv()) {
     case 'react-native':
         // something to do
@@ -60,6 +58,11 @@ switch(isEnv()) {
     case 'nodejs':
         // something to do
         break;
+    case 'unknow':
+        // something to do
+        break;
+    default: break;
 }
 ```
+
 
