@@ -1,9 +1,17 @@
 
 ### is-env
 `is-env` is a current detector.
+
 Can check the `js` operating environment is `browser` or `react-native` or `nodejs`
+
 In addition to `browser`, `nodejs`, `react-native`, other output `unknow`.
+
 Only ie9+ and modern browsers are supported in browsers.
+
+
+<a href="https://www.npmjs.com/package/is-env"><img src="https://img.shields.io/npm/v/is-env.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/is-env"><img src="https://img.shields.io/npm/dm/is-env.svg?style=flat-square"></a>
+
 
 ### install
 
