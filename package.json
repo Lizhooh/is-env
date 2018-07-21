@@ -1,6 +1,6 @@
 {
   "name": "is-env",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "is-env can determine the current JavaScript running environment, and now includes 'browser', 'react-native', 'nodejs'.",
   "main": "index.js",
   "scripts": {

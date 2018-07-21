@@ -2,9 +2,9 @@
 ### is-env
 `is-env` is a current detector.
 
-Can check the `js` operating environment is `browser` or `react-native` or `nodejs`
+Can check the `js` operating environment is `browser` or `react-native` or `nodejs` or `weapp`.
 
-In addition to `browser`, `nodejs`, `react-native`, other output `unknow`.
+In addition to `browser`, `nodejs`, `react-native`, `weapp`, other output `unknow`.
 
 Only ie9+ and modern browsers are supported in browsers.
 
@@ -24,23 +24,10 @@ npm install --save is-env
 ```js
 const isEnv = require('is-env');
 
-let _fetch;
-
-if (isEnv('nodejs')) {
-    // nodejs
-    _fetch = require('node-fetch');
-}
-else if (isEnv('react-native')) {
-    // react-native
-    _fetch = fetch;
-}
-else if(isEnv('browser') && window.hasOwnProperty('fetch')) {
-    _fetch = fetch;
-}
-else if (isEnv('browser') && !window.hasOwnProperty('fetch')){
-    // window.fetch polyfill
-    _fetch = require('whatwg-fetch');
-}
+isEnv('nodejs');
+isEnv('react-native');
+isEnv('browser');
+isEnv('weapp');
 ```
 
 When the parameter is a non string, output the current environment.
@@ -49,18 +36,11 @@ When the parameter is a non string, output the current environment.
 const isEnv = require('is-env');
 
 switch(isEnv()) {
-    case 'react-native':
-        // something to do
-        break;
-    case 'browser':
-        // something to do
-        break;
-    case 'nodejs':
-        // something to do
-        break;
-    case 'unknow':
-        // something to do
-        break;
+    case 'react-native': break;
+    case 'browser': break;
+    case 'nodejs': break;
+    case 'weapp': break;
+    case 'unknow': break;
     default: break;
 }
 ```

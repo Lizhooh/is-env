@@ -21,6 +21,9 @@ function test() {
             return 'nodejs';
         }
     }
+    else if (typeof wx !== 'undefined') {
+        return 'weapp';
+    }
 
     return 'unknow';
 }
